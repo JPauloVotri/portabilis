@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro de Alunos</title>
+</head>
+
+<body>
+	<fieldset>
+		<legend><h3>Cadastro de Alunos</h3></legend>
+		<form action="cadAluno.php" method="post">
+			<label for="nome"> Nome: </label><br>
+			<input id="nome" name="nome" type="text" required><br>
+			<label for="telefone"> Telefone: </label><br>
+			<input id="telefone" name="telefone" type="text"><br>
+			<label for="data_nasc"> Data de Nascimento: </label><br>
+			<input id="dia_nasc" name="dia_nasc" type="number" min="1" max="31" required>
+			<input id="mes_nasc" name="mes_nasc" type="number" min="1" max="12" required>
+			<input id="ano_nasc" name="ano_nasc" type="number" min="1900" max="2016" required><br>
+			<label for="cpf"> CPF: </label><br>
+			<input id="cpf" name="cpf" type="text" required><br>
+			<label for="rg"> Registro Geral: </label><br>
+			<input id="rg" name="rg" type="text"><br>
+			<input type="submit">
+			<input type="button" value="Voltar" onClick="window.location.href = 'index.html';"><br>
+		</form>
+	</fieldset>
+</body>
+</html>

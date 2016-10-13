@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro de Matriculas</title>
+</head>
+
+<body>
+	
+	<fieldset>
+		<legend><h3>Cadastro de Matriculas</h3></legend>
+		<form action="cadMatricula.php" method="post">
+			<label for="aluno_id"> ID do Aluno: </label><br>
+			<input id="aluno_id" name="aluno_id" type="number" required><br>
+			<label for="curso_id"> ID do Curso: </label><br>
+			<input id="curso_id" name="curso_id" type="number" required><br>
+			<label for="data_matr"> Data da Matricula: </label><br>
+			<input id="dia_matr" name="dia_matr" type="number" min="1" max="31" required>
+			<input id="mes_matr" name="mes_matr" type="number" min="1" max="12" required>
+			<input id="ano_matr" name="ano_matr" type="number" min="1900" max="2099" required><br>
+			<label for="ano"> Ano: </label><br>
+			<input id="ano" name="ano" type="text" required><br>
+			<label for="pago"> Pago: </label><br>
+			<input type="radio" name="pago" value="1" checked> Sim <br>
+			<input type="radio" name="pago" value="0"> Não <br>
+			<input type="submit">
+			<input type="button" value="Voltar" onClick="window.location.href = 'index.html';"><br>
+		</form>
+	</fieldset>
+</body>
+</html>

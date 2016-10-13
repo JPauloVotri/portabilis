@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro de Alunos</title>
+</head>
+
+<body>
+	<fieldset>
+		<legend><h3>Cadastro de Cursos</h3></legend>
+		<form action="cadCurso.php" method="post">
+			<label for="nome"> Nome: </label><br>
+			<input id="nome" name="nome" type="text" required><br>
+			<label for="valor"> Valor da inscrição: </label><br>
+			<input id="valor" name="valor" type="number" value="000" required>, 
+			<input id="valor_dec" name="valor_dec" type="number" min="0" max="99" value="00"><br>
+			<label for="periodo"> Período (Matutino - 1; Vespertino - 2; Integral - 3): </label><br>
+			<input id="periodo" name="periodo" type="number" value="1" min="1" max="3" required><br>
+			<input type="submit">
+			<input type="button" value="Voltar" onClick="window.location.href = 'index.html';"><br>
+		</form>
+	</fieldset>
+</body>
+</html>
